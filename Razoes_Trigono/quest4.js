@@ -22,20 +22,15 @@ class Razoes4Screen extends React.Component {
           <Text style={styles.ALT}>d) 40 cm2</Text> 
           
 
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate(index)
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('index')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}
@@ -79,8 +74,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image:{
-    width: 130, //largura
-    height: 215, //altura
+    width: 215, //largura
+    height: 130, //altura
   },
   questao: {
     color: '#180033',

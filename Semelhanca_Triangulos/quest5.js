@@ -25,20 +25,15 @@ class Semelhanca5Screen extends React.Component {
           <Text style={styles.ALT}>d) 45</Text> 
           <Text style={styles.ALT}>e) nenhuma das alternativas</Text> 
 
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate('Semelhanca6')
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('Semelhanca6')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}
@@ -125,7 +120,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image:{
-    width: 171, //largura
+    width: 260, //largura
     height: 165, //altura
   },
 });

@@ -18,20 +18,15 @@ class Amostra2Screen extends React.Component {
           <Text style={styles.ALT}>d) (163,35; 186,65).</Text>
           <Text style={styles.ALT}>e) (174,1775; 175,8225).</Text>
 
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate('Amostra3')
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('Amostra3')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}

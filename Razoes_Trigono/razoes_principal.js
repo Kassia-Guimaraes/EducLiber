@@ -25,11 +25,21 @@ class RazoesScreen extends React.Component{
                 this.props.navigation.navigate('Razoes2')
               }
             >
+            <Text style={styles.tema}>ENEM - 2013</Text>
+            <Text style={styles.text}>Ao morrerAs torres Puerta de Europa são ...</Text>
+            </TouchableOpacity>
+        </LinearGradient>
+        <LinearGradient colors={['#DAA9FB', '#EFDFFA']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Razoes3')
+              }
+            >
             <Text style={styles.tema}>ENEM - 2009</Text>
             <Text style={styles.text}>Ao morrer, o pai de João, Pedro e José deixou ...</Text>
             </TouchableOpacity>
         </LinearGradient>
-        <LinearGradient colors={['#DAA9FB', '#EFDFFA']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+        <LinearGradient colors={['#8CFF8C', '#E7FFE7']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
           <TouchableOpacity
               onPress={() =>
                 this.props.navigation.navigate('Razoes4')

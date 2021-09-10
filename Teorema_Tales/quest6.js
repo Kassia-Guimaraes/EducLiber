@@ -22,20 +22,15 @@ class Teorema6Screen extends React.Component {
           <Text style={styles.ALT}>d) 11 e 6</Text> 
           <Text style={styles.correct}>e) 20/3 e 40/3</Text> 
 
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate('Teorema7')
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('Teorema7')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}

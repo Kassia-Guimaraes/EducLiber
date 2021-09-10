@@ -18,20 +18,15 @@ class Teorema1Screen extends React.Component {
           <Text style={styles.ALT}>d) 74 m</Text> 
           <Text style={styles.ALT}>e) 68 m</Text> 
 
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate('Teorema2')
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('Teorema2')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}

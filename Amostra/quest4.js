@@ -22,20 +22,15 @@ class Amostra4Screen extends React.Component {
           <Text style={styles.ALT}>d) Uma amostra estratificada de 112 elementos que seja selecionada com base na alocação uniforme será composta por 55 homens e 57 mulheres.</Text>
           <Text style={styles.correct}>e) Considerando-se um erro amostral tolerável de 5%, o tamanho mínimo de uma amostra aleatória simples deve ser igual a 142.</Text>
           
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate(index)
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('index')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}

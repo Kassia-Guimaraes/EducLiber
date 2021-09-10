@@ -18,20 +18,15 @@ class Questao5Screen extends React.Component {
           <Text style={styles.correct}>d) (3,-2)</Text>
           <Text style={styles.ALT}>e) Nenhuma das respostas</Text>
           
-          {
-            this.context.home.map((next, index) => (
-            <View style={styles.botao}>
-              <Button
-                key={next}
-                title={'Próxima questão'}
-                color="transparent"
-                onPress={() => 
-                  this.props.navigation.navigate('Question7')
-                }
-              />
-            </View>
-          ))}
-          
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('Question7')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}

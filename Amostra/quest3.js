@@ -21,20 +21,15 @@ class Amostra3Screen extends React.Component {
           <Text style={styles.ALT}>d) O estrato B possui mais unidades populacionais que o estrato A. </Text>
           <Text style={styles.ALT}>e) O intervalo de amostragem no estrato A possui amplitude maior que o intervalo de amostragem no estrato B. </Text>
           
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate('Amostra4')
-                  }
-                />
-              </View>
-            ))
-          }
+          <View style={styles.botao}>
+            <Button 
+              title={'Próxima questão'}
+              color='transparent'
+              onPress={() =>
+               this.props.navigation.navigate('Amostra4')
+              }
+            />
+          </View>
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}

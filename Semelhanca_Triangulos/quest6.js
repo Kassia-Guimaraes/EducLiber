@@ -21,20 +21,7 @@ class Semelhanca6Screen extends React.Component {
           <Text style={styles.ALT}>b) (31/5,26/5)</Text>
           <Text style={styles.ALT}>c) (33/5,29/5)</Text> 
           <Text style={styles.ALT}>d) (36/5,37/5)</Text> 
-          {
-            this.context.home.map((next, index) => (
-              <View style={styles.botao}>
-                <Button 
-                  key={ next }
-                  title={'Próxima questão'}
-                  color='transparent'
-                  onPress={() =>
-                    this.props.navigation.navigate(index)
-                  }
-                />
-              </View>
-            ))
-          }
+          
           <View style={styles.botao}>
             <Button
               title={'Voltar para o início'}
