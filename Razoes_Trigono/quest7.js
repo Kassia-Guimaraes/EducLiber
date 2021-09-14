@@ -3,23 +3,26 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Razoes4Screen extends React.Component {
+class Razoes7Screen extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
           <Text style={styles.materia}>Geometria - Razês Trigonométricas</Text> 
-          <Text style={styles.titulo}>GUALIMP</Text>
-          <Text style={styles.questao}>Observe as dimensões do triângulo retângulo abaixo:</Text>
+          <Text style={styles.titulo}>(ENEM-2011)</Text>
+          <Text style={styles.questao}>Para determinar a distância de um barco até a praia, um navegante utilizou o seguinte procedimento: a partir de um ponto A, mediu o ângulo visual α fazendo mira em um ponto fixo P da praia. Mantendo o barco no mesmo sentido, ele seguiu até um ponto B de modo que fosse possível ver o mesmo  possível ver o mesmo ponto P da praia, no entanto sob um ângulo visual 2α. A figura ilustra essa situação: 
+:</Text>
           <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
+            <Image style={styles.image} source={require('./imagens/img_quest7.png')} />
           </View>
-          <Text style={styles.questao}>Qual a área desse triângulo retângulo?</Text>
-          <Text style={styles.ALT}>a) 400 cm2</Text> 
-          <Text style={styles.ALT}>b) 120 cm2</Text>
-          <Text style={styles.correct}>c) 600 cm2</Text> 
-          <Text style={styles.ALT}>d) 40 cm2</Text> 
+          <Text style={styles.questao}>Suponha que o navegante tenha medido o ângulo α = 30°  e, ao chegar ao ponto B, verificou que o barco havia percorrido a distância AB = 2 000 m. Com base nesses dados e mantendo a mesma trajetória, a menor distância do barco até o ponto fixo P será: 
+</Text>
+          <Text style={styles.ALT}>a) 1000 m</Text> 
+          <Text style={styles.ALT}>b) 1 000 √3 m</Text>
+          <Text style={styles.correct}>c) 2 000 √3/3 m</Text> 
+          <Text style={styles.ALT}>d) 2 000 m</Text> 
+          <Text style={styles.ALT}>e) 2 000 √3 m</Text> 
           
 
           <View style={styles.botao}>
@@ -27,7 +30,7 @@ class Razoes4Screen extends React.Component {
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Razoes5')
+               this.props.navigation.navigate('index')
               }
             />
           </View>
@@ -74,8 +77,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image:{
-    width: 215, //largura
-    height: 130, //altura
+    width: 326, //largura
+    height: 106, //altura
   },
   questao: {
     color: '#180033',
@@ -122,6 +125,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Razoes4Screen.contextType = QuestoesContext;
+Razoes7Screen.contextType = QuestoesContext;
 
-export default Razoes4Screen;
+export default Razoes7Screen;

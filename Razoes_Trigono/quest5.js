@@ -3,23 +3,19 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Razoes4Screen extends React.Component {
+class Razoes5Screen extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
           <Text style={styles.materia}>Geometria - Razês Trigonométricas</Text> 
-          <Text style={styles.titulo}>GUALIMP</Text>
-          <Text style={styles.questao}>Observe as dimensões do triângulo retângulo abaixo:</Text>
-          <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
-          </View>
-          <Text style={styles.questao}>Qual a área desse triângulo retângulo?</Text>
-          <Text style={styles.ALT}>a) 400 cm2</Text> 
-          <Text style={styles.ALT}>b) 120 cm2</Text>
-          <Text style={styles.correct}>c) 600 cm2</Text> 
-          <Text style={styles.ALT}>d) 40 cm2</Text> 
+          <Text style={styles.titulo}>Cesgranrio</Text>
+          <Text style={styles.questao}>Uma escada de 2m de comprimento está apoiada no chão e em uma parede vertical. Se a escada faz 30° com a horizontal, a distância do topo da escada ao chão é de: :</Text>
+          <Text style={styles.ALT}>a)0,5 m</Text> 
+          <Text style={styles.correct}>b) 1 m</Text>
+          <Text style={styles.ALT}>c)1,5 m</Text> 
+          <Text style={styles.ALT}>d) 2 m</Text> 
           
 
           <View style={styles.botao}>
@@ -27,7 +23,7 @@ class Razoes4Screen extends React.Component {
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Razoes5')
+               this.props.navigation.navigate('Razoes6')
               }
             />
           </View>
@@ -68,14 +64,6 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 16,
     fontSize: 12,
-  },
-  ajusteimg:{
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  image:{
-    width: 215, //largura
-    height: 130, //altura
   },
   questao: {
     color: '#180033',
@@ -122,6 +110,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Razoes4Screen.contextType = QuestoesContext;
+Razoes5Screen.contextType = QuestoesContext;
 
-export default Razoes4Screen;
+export default Razoes5Screen;

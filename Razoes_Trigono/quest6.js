@@ -3,23 +3,27 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Razoes4Screen extends React.Component {
+class Razoes6Screen extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
-          <Text style={styles.materia}>Geometria - Razês Trigonométricas</Text> 
-          <Text style={styles.titulo}>GUALIMP</Text>
-          <Text style={styles.questao}>Observe as dimensões do triângulo retângulo abaixo:</Text>
+          <Text style={styles.materia}>Geometria - Razoês Trigonométricas</Text> 
+          <Text style={styles.titulo}>(ENEM-2010)</Text>
+          <Text style={styles.questao}>Um balão atmosférico, lançado em Bauru (343 quilômetros a Noroeste de São Paulo), na noite do último domingo, caiu nesta segunda-feira em Cuiabá Paulista, na região de Presidente Prudente, assustando agricultores da região. O artefato faz parte do programa Projeto Hibiscus, desenvolvido por Brasil, França, Argentina, Inglaterra e Itália, para a medição do comportamento da camada de ozônio, e sua descida se deu após o cumprimento do tempo previsto de medição.
+:</Text>
           <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
+            <Image style={styles.image} source={require('./imagens/img_quest6.png')} />
           </View>
-          <Text style={styles.questao}>Qual a área desse triângulo retângulo?</Text>
-          <Text style={styles.ALT}>a) 400 cm2</Text> 
-          <Text style={styles.ALT}>b) 120 cm2</Text>
-          <Text style={styles.correct}>c) 600 cm2</Text> 
-          <Text style={styles.ALT}>d) 40 cm2</Text> 
+          <Text style={styles.questao}>Na data do acontecido, duas pessoas avistaram o balão. Uma estava a 1,8 km da posição vertical do balão e o avistou sob um ângulo de 60º; a outra estava a 5,5 km da posição vertical do balão, alinhada com a primeira, e no mesmo sentido, conforme se vê na figura, e o avistou sob um ângulo de 30º. 
+Qual a altura aproximada em que se encontrava o balão?
+</Text>
+          <Text style={styles.ALT}>a) 1,8 km</Text> 
+          <Text style={styles.ALT}>b) 1,9 km</Text>
+          <Text style={styles.correct}>c) 3,1 km</Text> 
+          <Text style={styles.ALT}>d) 3,7 km</Text> 
+          <Text style={styles.ALT}>e) 5,5 km</Text> 
           
 
           <View style={styles.botao}>
@@ -27,7 +31,7 @@ class Razoes4Screen extends React.Component {
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Razoes5')
+               this.props.navigation.navigate('Razoes7')
               }
             />
           </View>
@@ -74,8 +78,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image:{
-    width: 215, //largura
-    height: 130, //altura
+    width: 326, //largura
+    height: 140, //altura
   },
   questao: {
     color: '#180033',
@@ -122,6 +126,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Razoes4Screen.contextType = QuestoesContext;
+Razoes6Screen.contextType = QuestoesContext;
 
-export default Razoes4Screen;
+export default Razoes6Screen;

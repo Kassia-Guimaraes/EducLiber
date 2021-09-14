@@ -37,6 +37,9 @@ import Razoes1Screen from './Razoes_Trigono/quest1';
 import Razoes2Screen from './Razoes_Trigono/quest2';
 import Razoes3Screen from './Razoes_Trigono/quest3';
 import Razoes4Screen from './Razoes_Trigono/quest4';
+import Razoes5Screen from './Razoes_Trigono/quest5';
+import Razoes6Screen from './Razoes_Trigono/quest6';
+import Razoes7Screen from './Razoes_Trigono/quest7';
 
 import AmostraScreen from './Amostra/amostra_principal'; // Amostras
 import Amostra1Screen from './Amostra/quest1';
@@ -191,6 +194,18 @@ export default class App extends React.Component{
             <Stack.Screen
               name='Razoes4'
               component={Razoes4Screen}
+            />
+            <Stack.Screen
+              name='Razoes5'
+              component={Razoes5Screen}
+            />
+            <Stack.Screen
+              name='Razoes6'
+              component={Razoes6Screen}
+            />
+            <Stack.Screen
+              name='Razoes7'
+              component={Razoes7Screen}
             />
 
             <Stack.Screen //Amostras
