@@ -3,31 +3,31 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra4Screen extends React.Component {
+class Amostra7Screen extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
           <Text style={styles.materia}>Estatística e Probabilidade - Amostras</Text>
-          <Text style={styles.titulo}>TJ-PA CESPE - 2020</Text>
-          <Text style={styles.questao}>A tabela a seguir apresenta dados referentes às idades dos funcionários de determinada empresa. Nessa tabela, a população da empresa está dividida em 8 estratos, conforme determinados intervalos de idade.</Text> 
-          <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
-          </View>
-          <Text style={styles.questao}>A partir dessas informações, assinale a opção correta.</Text> 
-          <Text style={styles.ALT}>a) A Uma amostra estratificada de 100 elementos que seja selecionada com base na alocação proporcional será composta por menos de 15 homens com idade entre 20 e 30 anos.</Text>
-          <Text style={styles.ALT}>b) Considerando-se um erro amostral tolerável de 4%, o tamanho mínimo de uma amostra aleatória simples deve ser inferior a 162.</Text>
-          <Text style={styles.ALT}>c) Se uma amostra estratificada de 120 elementos for selecionada com base na alocação proporcional, então mais da metade dos elementos dessa amostra serão homens.</Text>
-          <Text style={styles.ALT}>d) Uma amostra estratificada de 112 elementos que seja selecionada com base na alocação uniforme será composta por 55 homens e 57 mulheres.</Text>
-          <Text style={styles.correct}>e) Considerando-se um erro amostral tolerável de 5%, o tamanho mínimo de uma amostra aleatória simples deve ser igual a 142.</Text>
+          <Text style={styles.titulo}>EBSERH 2020 - Analista Administrativo - Estatística</Text>
+          <Text style={styles.questao}>Um modelo de regressão linear simples foi gerado para explicar vendas (Y, em milhares de reais) a partir de propaganda (X, em centenas de reais). Algumas informações do modelo são apresentadas:
+Equação de regressão estimada: Y=12 + 1,8X Tamanho da amostra: 17 observações. Soma de quadrados da regressão: 225,00. Soma de quadrados dos resíduos: 75,00. Sb1= 0,27.
+Considere as seguintes afirmações: I. De acordo com a equação de regressão estimada, um gasto de R$ 1.000,00 em propaganda resulta em vendas estimadas de R$ 40.000,00. II. O coeficiente de determinação do modelo (R²) é de 75%. III. A cada incremento unitário em X, espera-se que Y aumente 1,8.
+Estão corretas as afirmativas:
+</Text> 
+          <Text style={styles.ALT}>a)I apenas </Text>
+          <Text style={styles.ALT}>b) I e II, apenas</Text>
+          <Text style={styles.ALT}>c) I e III, apenas</Text>
+          <Text style={styles.correct}>d) II e III, apenas</Text>
+          <Text style={styles.ALT}>e) I, II e III</Text>
           
           <View style={styles.botao}>
             <Button 
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Amoatra5')
+               this.props.navigation.navigate('Amostra8')
               }
             />
           </View>
@@ -123,6 +123,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra4Screen.contextType = QuestoesContext;
+Amostra7Screen.contextType = QuestoesContext;
 
-export default Amostra4Screen;
+export default Amostra7Screen;

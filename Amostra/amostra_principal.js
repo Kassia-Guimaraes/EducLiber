@@ -49,6 +49,46 @@ class AmostraScreen extends React.Component{
             <Text style={styles.text}>A tabela a seguir apresenta dados ...</Text>
           </TouchableOpacity>
         </LinearGradient>
+        <LinearGradient colors={['#FFE27A', '#FFF4CE']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Amostra5')
+              }
+            >
+            <Text style={styles.tema}>CESPE - 2020</Text>
+            <Text style={styles.text}>Uma amostra aleatória simples ...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
+        <LinearGradient colors={['#AAE5FF', '#D4F2FF', '#F3FBFF']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Amostra6')
+              }
+            >
+            <Text style={styles.tema}>FUNDATEC - 2021</Text>
+            <Text style={styles.text}>Assumindo que todas as outras variáveis ...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
+        <LinearGradient colors={['#FFBD9A', '#FFCAAD', '#FFE7DB']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Amostra7')
+              }
+            >
+            <Text style={styles.tema}>EBSERH</Text>
+            <Text style={styles.text}>Um modelo de regressão linear...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
+        <LinearGradient colors={['#DAA9FB', '#EFDFFA']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Amostra8')
+              }
+            >
+            <Text style={styles.tema}>EBSERH</Text>
+            <Text style={styles.text}>Considere que um estudo será ...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
 
         <View style={styles.botao}>
           <Button

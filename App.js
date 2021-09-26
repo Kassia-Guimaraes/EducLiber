@@ -46,6 +46,10 @@ import Amostra1Screen from './Amostra/quest1';
 import Amostra2Screen from './Amostra/quest2';
 import Amostra3Screen from './Amostra/quest3';
 import Amostra4Screen from './Amostra/quest4';
+import Amostra5Screen from './Amostra/quest5';
+import Amostra6Screen from './Amostra/quest6';
+import Amostra7Screen from './Amostra/quest7';
+import Amostra8Screen from './Amostra/quest8';
 
 import { QuestoesContext } from './questoes.context';
 
@@ -227,6 +231,22 @@ export default class App extends React.Component{
             <Stack.Screen
               name='Amostra4'
               component={Amostra4Screen}
+            />
+            <Stack.Screen
+              name='Amostra5'
+              component={Amostra5Screen}
+            />
+            <Stack.Screen
+              name='Amostra6'
+              component={Amostra6Screen}
+            />
+            <Stack.Screen
+              name='Amostra7'
+              component={Amostra7Screen}
+            />
+            <Stack.Screen
+              name="Amostra8"
+              component={Amostra8Screen}
             />
           </Stack.Navigator>
         </NavigationContainer>

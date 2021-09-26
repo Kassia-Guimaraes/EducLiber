@@ -3,31 +3,28 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra4Screen extends React.Component {
+class Amostra6Screen extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
           <Text style={styles.materia}>Estatística e Probabilidade - Amostras</Text>
-          <Text style={styles.titulo}>TJ-PA CESPE - 2020</Text>
-          <Text style={styles.questao}>A tabela a seguir apresenta dados referentes às idades dos funcionários de determinada empresa. Nessa tabela, a população da empresa está dividida em 8 estratos, conforme determinados intervalos de idade.</Text> 
-          <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
-          </View>
-          <Text style={styles.questao}>A partir dessas informações, assinale a opção correta.</Text> 
-          <Text style={styles.ALT}>a) A Uma amostra estratificada de 100 elementos que seja selecionada com base na alocação proporcional será composta por menos de 15 homens com idade entre 20 e 30 anos.</Text>
-          <Text style={styles.ALT}>b) Considerando-se um erro amostral tolerável de 4%, o tamanho mínimo de uma amostra aleatória simples deve ser inferior a 162.</Text>
-          <Text style={styles.ALT}>c) Se uma amostra estratificada de 120 elementos for selecionada com base na alocação proporcional, então mais da metade dos elementos dessa amostra serão homens.</Text>
-          <Text style={styles.ALT}>d) Uma amostra estratificada de 112 elementos que seja selecionada com base na alocação uniforme será composta por 55 homens e 57 mulheres.</Text>
-          <Text style={styles.correct}>e) Considerando-se um erro amostral tolerável de 5%, o tamanho mínimo de uma amostra aleatória simples deve ser igual a 142.</Text>
+          <Text style={styles.titulo}>FUNDATEC-2021</Text>
+          <Text style={styles.questao}>Assumindo que todas as outras variáveis permaneçam inalteradas, para diminuir a amplitude do intervalo de confiança de uma amostra, o que deve acontecer com o tamanho dessa amostra?
+</Text>   
+          <Text style={styles.correct}>a)Aumentar. </Text>
+          <Text style={styles.ALT}>b)Permanecer igual </Text>
+          <Text style={styles.ALT}>c)Diminuir. </Text>
+          <Text style={styles.ALT}>d) Nada se pode afirmar. </Text>
+          <Text style={styles.ALT}>e)Aumentar ou diminuir. </Text>
           
           <View style={styles.botao}>
             <Button 
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Amoatra5')
+               this.props.navigation.navigate('Amostra7')
               }
             />
           </View>
@@ -123,6 +120,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra4Screen.contextType = QuestoesContext;
+Amostra6Screen.contextType = QuestoesContext;
 
-export default Amostra4Screen;
+export default Amostra6Screen;

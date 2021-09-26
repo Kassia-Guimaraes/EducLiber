@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra4Screen extends React.Component {
+class Amostra5Screen extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
@@ -11,23 +11,20 @@ class Amostra4Screen extends React.Component {
           <Text style={styles.mat}>Matemática</Text> 
           <Text style={styles.materia}>Estatística e Probabilidade - Amostras</Text>
           <Text style={styles.titulo}>TJ-PA CESPE - 2020</Text>
-          <Text style={styles.questao}>A tabela a seguir apresenta dados referentes às idades dos funcionários de determinada empresa. Nessa tabela, a população da empresa está dividida em 8 estratos, conforme determinados intervalos de idade.</Text> 
-          <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
-          </View>
-          <Text style={styles.questao}>A partir dessas informações, assinale a opção correta.</Text> 
-          <Text style={styles.ALT}>a) A Uma amostra estratificada de 100 elementos que seja selecionada com base na alocação proporcional será composta por menos de 15 homens com idade entre 20 e 30 anos.</Text>
-          <Text style={styles.ALT}>b) Considerando-se um erro amostral tolerável de 4%, o tamanho mínimo de uma amostra aleatória simples deve ser inferior a 162.</Text>
-          <Text style={styles.ALT}>c) Se uma amostra estratificada de 120 elementos for selecionada com base na alocação proporcional, então mais da metade dos elementos dessa amostra serão homens.</Text>
-          <Text style={styles.ALT}>d) Uma amostra estratificada de 112 elementos que seja selecionada com base na alocação uniforme será composta por 55 homens e 57 mulheres.</Text>
-          <Text style={styles.correct}>e) Considerando-se um erro amostral tolerável de 5%, o tamanho mínimo de uma amostra aleatória simples deve ser igual a 142.</Text>
+          <Text style={styles.questao}>Uma amostra aleatória simples de tamanho 5 foi retirada de uma distribuição de Poisson com média igual a 5. Essa amostra é representada por X1, X2, X3, X4, X5, em que cada variável Xk denota o total de erros processuais registrados em certo cartório judicial no dia k, com k 0 {1, 2, 3, 4, 5}. A respeito da quantidade semanal de erros processuais registrados nesse cartório Y = X1 + X2 + X3 + X4 +X5, assinale a opção correta.
+</Text> 
+          <Text style={styles.ALT}>a) O coeficiente de variação de Y é igual a 1</Text>
+          <Text style={styles.ALT}>b)  E(Y) 20</Text>
+          <Text style={styles.correct}>c) O desvio padrão de Y é igual a 5.</Text>
+          <Text style={styles.ALT}>d) Para k = 1, 2, 3, 4, 5, tem-se que P(Y = 0) $ P(Xk = 0).</Text>
+          <Text style={styles.ALT}>e) A média semanal de erros processuais, denotada por Y/5, segue uma distribuição normal.</Text>
           
           <View style={styles.botao}>
             <Button 
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Amoatra5')
+               this.props.navigation.navigate('Amostra6')
               }
             />
           </View>
@@ -123,6 +120,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra4Screen.contextType = QuestoesContext;
+Amostra5Screen.contextType = QuestoesContext;
 
-export default Amostra4Screen;
+export default Amostra5Screen;
