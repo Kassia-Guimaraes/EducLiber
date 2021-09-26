@@ -39,6 +39,16 @@ class AmostraScreen extends React.Component{
             <Text style={styles.text}>Uma pesquisa foi realizada em uma ...</Text>
           </TouchableOpacity>
         </LinearGradient>
+        <LinearGradient colors={['#8CFF8C', '#E7FFE7']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Amostra4')
+              }
+            >
+            <Text style={styles.tema}>TJ-PA CESPE - 2020</Text>
+            <Text style={styles.text}>A tabela a seguir apresenta dados ...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
 
         <View style={styles.botao}>
           <Button

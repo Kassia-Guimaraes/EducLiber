@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   image:{
-    width: 292, //largura
-    height: 149, //altura
+    width: 290, //largura
+    height: 148, //altura
   },
   ALT:{
     color:'#180033',
