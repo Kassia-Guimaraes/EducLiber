@@ -1,40 +1,33 @@
-// Geometria - Teorema de Tales
+// Álgebra e funções - Análise de gráficos
 import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Teorema2Screen extends React.Component {
+class Grafico1 extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
-          <Text style={styles.materia}>Geometria - Teorema de Tales</Text>
-          <Text style={styles.titulo}>CPS/UEPG 2012</Text>
-          <Text style={styles.questao}>Para melhorar a qualidade do solo, aumentando a produtividade do milho e da soja, em uma fazenda é feito o rodízio entre essas culturas e a área destinada ao pasto. Com essa finalidade, a área produtiva da fazenda foi dividida em três partes conforme a figura.</Text>
+          <Text style={styles.materia}>Álgebra e funções - Análise de gráficos</Text>
+          <Text style={styles.titulo}>ENEM 2013</Text>
+          <Text style={styles.questao}>A cidade de Guarulhos (SP) tem o 8º PIB municipal do Brasil, além do maior aeroporto da América do Sul. Em proporção, possui a economia que mais cresce em indústrias, conforme mostra o gráfico. </Text>
           <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imgs/img_quest2.png')} />
+            <Image style={styles.image} source={require('./img/img_quest2.jpg')} />
           </View>
-          <Text style={styles.questao}>Considere que</Text>
-          <Text style={styles.questao}>• os pontos A, B, C e D estão alinhados;</Text>
-          <Text style={styles.questao}>• os pontos H, G, F e E estão alinhados;</Text>
-          <Text style={styles.questao}>• os segmentos AH, BG, CF e DE são, dois a dois, pararelos entre si;</Text>
-          <Text style={styles.questao}>• AB = 500m, BC = 600m, CD = 700 e HE = 1.980m</Text>
-            
-             
-          <Text style={styles.questao}>Nessas condições, a medida do segmento GF é, em metros:</Text>     
-          <Text style={styles.ALT}>a) 665</Text> 
-          <Text style={styles.correct}>b) 660</Text>
-          <Text style={styles.ALT}>c) 655</Text> 
-          <Text style={styles.ALT}>d) 650</Text> 
-          <Text style={styles.ALT}>e) 645</Text> 
+          <Text style={styles.questao}>Analisando os dados percentuais do gráfico, qual a diferença entre o maior e o menor centro em crescimento no polo das indústrias?</Text> 
+          <Text style={styles.ALT}>a) 75,28</Text>
+          <Text style={styles.ALT}>b) 64,09</Text>
+          <Text style={styles.correct}>c) 56,95</Text> 
+          <Text style={styles.ALT}>d) 45,76</Text> 
+          <Text style={styles.ALT}>e) 30,07</Text> 
 
           <View style={styles.botao}>
             <Button 
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Teorema3')
+               this.props.navigation.navigate('index')
               }
             />
           </View>
@@ -82,7 +75,7 @@ const styles = StyleSheet.create({
   },
   image:{
     width: 300, //largura
-    height: 160, //altura
+    height: 200, //altura
   },
   questao: {
     color: '#180033',
@@ -129,6 +122,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Teorema2Screen.contextType = QuestoesContext;
+Grafico1.contextType = QuestoesContext;
 
-export default Teorema2Screen;
+export default Grafico1;

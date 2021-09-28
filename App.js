@@ -54,6 +54,7 @@ import Amostra9 from './Amostra/quest9';
 
 import GraficoPrincipal from './Analise_Graficos/graficos_principal';
 import Grafico1 from './Analise_Graficos/quest1';
+import Grafico2 from './Analise_Graficos/quest2';
 
 import { QuestoesContext } from './questoes.context';
 
@@ -264,6 +265,10 @@ export default class App extends React.Component{
             <Stack.Screen
               name='Grafico1'
               component={Grafico1}
+            />
+            <Stack.Screen
+              name='Grafico2'
+              component={Grafico2}
             />
           </Stack.Navigator>
         </NavigationContainer>

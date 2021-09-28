@@ -19,7 +19,17 @@ class GraficoPrincipal extends React.Component{
             <Text style={styles.text}>Uma pesquisa de mercado foi realizada ...</Text>
           </TouchableOpacity>
         </LinearGradient>
-
+        <LinearGradient colors={['#FFBD9A', '#FFCAAD', '#FFE7DB']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Grafico2')
+              }
+            >
+            <Text style={styles.tema}>ENEM 2013</Text>
+            <Text style={styles.text}>A cidade de Guarulhos (SP) tem ...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
+        
         <View style={styles.botao}>
           <Button
             title={'Voltar para o início'}

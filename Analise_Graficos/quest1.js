@@ -28,7 +28,7 @@ class Grafico1 extends React.Component {
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Teorema3')
+               this.props.navigation.navigate('Grafico2')
               }
             />
           </View>
