@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra6Screen extends React.Component {
+class Amostra6 extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
@@ -120,6 +120,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra6Screen.contextType = QuestoesContext;
+Amostra6.contextType = QuestoesContext;
 
-export default Amostra6Screen;
+export default Amostra6;

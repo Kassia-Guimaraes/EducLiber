@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra8Screen extends React.Component {
+class Amostra8 extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
@@ -25,7 +25,7 @@ class Amostra8Screen extends React.Component {
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('index')
+               this.props.navigation.navigate('Amostra9')
               }
             />
           </View>
@@ -121,6 +121,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra8Screen.contextType = QuestoesContext;
+Amostra8.contextType = QuestoesContext;
 
-export default Amostra8Screen;
+export default Amostra8;

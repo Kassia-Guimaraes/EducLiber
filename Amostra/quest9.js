@@ -3,31 +3,28 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra4 extends React.Component {
+class Amostra9 extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
           <Text style={styles.materia}>Estatística e Probabilidade - Amostras</Text>
-          <Text style={styles.titulo}>TJ-PA CESPE - 2020</Text>
-          <Text style={styles.questao}>A tabela a seguir apresenta dados referentes às idades dos funcionários de determinada empresa. Nessa tabela, a população da empresa está dividida em 8 estratos, conforme determinados intervalos de idade.</Text> 
-          <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
-          </View>
-          <Text style={styles.questao}>A partir dessas informações, assinale a opção correta.</Text> 
-          <Text style={styles.ALT}>a) A Uma amostra estratificada de 100 elementos que seja selecionada com base na alocação proporcional será composta por menos de 15 homens com idade entre 20 e 30 anos.</Text>
-          <Text style={styles.ALT}>b) Considerando-se um erro amostral tolerável de 4%, o tamanho mínimo de uma amostra aleatória simples deve ser inferior a 162.</Text>
-          <Text style={styles.ALT}>c) Se uma amostra estratificada de 120 elementos for selecionada com base na alocação proporcional, então mais da metade dos elementos dessa amostra serão homens.</Text>
-          <Text style={styles.ALT}>d) Uma amostra estratificada de 112 elementos que seja selecionada com base na alocação uniforme será composta por 55 homens e 57 mulheres.</Text>
-          <Text style={styles.correct}>e) Considerando-se um erro amostral tolerável de 5%, o tamanho mínimo de uma amostra aleatória simples deve ser igual a 142.</Text>
+          <Text style={styles.titulo}>CESPE</Text>
+          <Text style={styles.questao}>Em uma amostra aleatória de 20 municípios Paraenses, considerando-se os dados da Secretaria de Estado de Segurança Pública e Defesa Social relativos ao crime de lesão corporal, a média é igual a 87 e o desvio padrão igual a 101,9419.</Text>
+           <Text style={styles.questao}>Considerando-se, para 19 graus de liberdade, o coeficiente a = 2,093 e utilizando-se o valor aproximado 4,4721 para a raiz quadrada de 20, com o auxílio da distribuição t, um intervalo de 95% de confiança para a média deverá ter</Text>
+          <Text style={styles.ALT}>a) limite inferior de, aproximadamente, 38,78.</Text>
+          <Text style={styles.ALT}>b) limite superior de, aproximadamente, 143,12.</Text>
+          <Text style={styles.ALT}>c) amplitude 2c = 93,45.</Text>
+          <Text style={styles.ALT}>d) limite inferior de 39,29 e limite superior de 142,18.</Text>
+          <Text style={styles.correct}>e) limite superior de, aproximadamente, 134,71.</Text>
           
           <View style={styles.botao}>
             <Button 
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Amoatra5')
+               this.props.navigation.navigate('index')
               }
             />
           </View>
@@ -123,6 +120,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra4.contextType = QuestoesContext;
+Amostra9.contextType = QuestoesContext;
 
-export default Amostra4;
+export default Amostra9;

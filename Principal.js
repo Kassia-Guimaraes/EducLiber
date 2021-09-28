@@ -53,6 +53,15 @@ class PrincipalScreen extends React.Component{
                 }
               />
             </View>
+            <View style={styles.botao}>
+              <Button
+                title='Análise de gráficos'
+                color='tansparent'
+                onPress={() =>
+                  this.props.navigation.navigate('GraficoPrincipal')
+                }
+              />
+            </View>
         </View>
       </ScrollView>
     )

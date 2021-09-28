@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button, ScrollView, TouchableOpacity, setCustom
 import { LinearGradient } from 'expo-linear-gradient';
 import { QuestoesContext } from '../questoes.context';
 
-class AmostraScreen extends React.Component{
+class AmostraPrincial extends React.Component{
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
@@ -89,6 +89,16 @@ class AmostraScreen extends React.Component{
             <Text style={styles.text}>Considere que um estudo será ...</Text>
           </TouchableOpacity>
         </LinearGradient>
+        <LinearGradient colors={['#8CFF8C', '#E7FFE7']} start={[1,0]} end={[0,1]} style={styles.linearGradient}>
+          <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Amostra9')
+              }
+            >
+            <Text style={styles.tema}>CESPE</Text>
+            <Text style={styles.text}>Em uma amostra aleatória de 20 ...</Text>
+          </TouchableOpacity>
+        </LinearGradient>
 
         <View style={styles.botao}>
           <Button
@@ -152,5 +162,5 @@ const styles = StyleSheet.create({
     justifyContent:'center',
   },
 });
-AmostraScreen.contextType = QuestoesContext
-export default AmostraScreen;
+AmostraPrincial.contextType = QuestoesContext
+export default AmostraPrincial;

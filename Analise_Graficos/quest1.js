@@ -1,33 +1,34 @@
-// Estatística e Probabilidade - Amostras
+// Álgebra e funções - Análise de gráficos
 import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Image } from 'react-native';
 import { QuestoesContext } from '../questoes.context';
 
-class Amostra4 extends React.Component {
+class Grafico1 extends React.Component {
   render() {
     return(
       <ScrollView style={styles.ScrollView}>
         <View>
           <Text style={styles.mat}>Matemática</Text> 
-          <Text style={styles.materia}>Estatística e Probabilidade - Amostras</Text>
-          <Text style={styles.titulo}>TJ-PA CESPE - 2020</Text>
-          <Text style={styles.questao}>A tabela a seguir apresenta dados referentes às idades dos funcionários de determinada empresa. Nessa tabela, a população da empresa está dividida em 8 estratos, conforme determinados intervalos de idade.</Text> 
+          <Text style={styles.materia}>Álgebra e funções - Análise de gráficos</Text>
+          <Text style={styles.titulo}>ENEM 2015</Text>
+          <Text style={styles.questao}>Uma pesquisa de mercado foi realizada entre os consumidores das classes sociais A, B, C e D que costumam participar de promoções tipo sorteio ou concurso. Os dados comparativos, expressos no gráfico, revelam a participação desses consumidores em cinco categorias: via Correios (juntando embalagens ou recortando códigos de barra), via internet (cadastrando-se no site da empresa/marca promotora), via mídias sociais (redes sociais), via SMS (mensagem por celular) ou via rádio/TV.</Text>
           <View style={styles.ajusteimg}>
-            <Image style={styles.image} source={require('./imagens/img_quest4.png')} />
+            <Image style={styles.image} source={require('./img/img_quest1.png')} />
           </View>
-          <Text style={styles.questao}>A partir dessas informações, assinale a opção correta.</Text> 
-          <Text style={styles.ALT}>a) A Uma amostra estratificada de 100 elementos que seja selecionada com base na alocação proporcional será composta por menos de 15 homens com idade entre 20 e 30 anos.</Text>
-          <Text style={styles.ALT}>b) Considerando-se um erro amostral tolerável de 4%, o tamanho mínimo de uma amostra aleatória simples deve ser inferior a 162.</Text>
-          <Text style={styles.ALT}>c) Se uma amostra estratificada de 120 elementos for selecionada com base na alocação proporcional, então mais da metade dos elementos dessa amostra serão homens.</Text>
-          <Text style={styles.ALT}>d) Uma amostra estratificada de 112 elementos que seja selecionada com base na alocação uniforme será composta por 55 homens e 57 mulheres.</Text>
-          <Text style={styles.correct}>e) Considerando-se um erro amostral tolerável de 5%, o tamanho mínimo de uma amostra aleatória simples deve ser igual a 142.</Text>
-          
+          <Text style={styles.questao}>Uma empresa vai lançar uma promoção utilizando apenas uma categoria nas classes A e B (A/B) e uma categoria nas classes C e D (C/D).</Text>
+          <Text style={styles.questao}>De acordo com o resultado da pesquisa, para atingir o maior número de consumidores das classes A/B e C/D, a empresa deve realizar a promoção, respectivamente, via</Text>    
+          <Text style={styles.ALT}>a) Correios e SMS</Text> 
+          <Text style={styles.correct}>b) Internet e Correios</Text>
+          <Text style={styles.ALT}>c) Internet e Internet</Text> 
+          <Text style={styles.ALT}>d) Internet e mídias sociais</Text> 
+          <Text style={styles.ALT}>e) rádio/TV e rádio/TV</Text> 
+
           <View style={styles.botao}>
             <Button 
               title={'Próxima questão'}
               color='transparent'
               onPress={() =>
-               this.props.navigation.navigate('Amoatra5')
+               this.props.navigation.navigate('Teorema3')
               }
             />
           </View>
@@ -69,6 +70,14 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     fontSize: 12,
   },
+  ajusteimg:{
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image:{
+    width: 300, //largura
+    height: 140, //altura
+  },
   questao: {
     color: '#180033',
     fontWeight: 'nunito',
@@ -76,14 +85,6 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     marginVertical: 8,
     marginHorizontal: 16,
-  },
-  ajusteimg:{
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  image:{
-    width: 290, //largura
-    height: 148, //altura
   },
   ALT:{
     color:'#180033',
@@ -108,7 +109,6 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     marginHorizontal: 16,
     borderRadius: 8,
-    textAlign: 'justify',
   },
   botao: {
     borderColor: '#F0EBF5',
@@ -123,6 +123,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
 });
-Amostra4.contextType = QuestoesContext;
+Grafico1.contextType = QuestoesContext;
 
-export default Amostra4;
+export default Grafico1;

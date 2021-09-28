@@ -41,15 +41,19 @@ import Razoes5Screen from './Razoes_Trigono/quest5';
 import Razoes6Screen from './Razoes_Trigono/quest6';
 import Razoes7Screen from './Razoes_Trigono/quest7';
 
-import AmostraScreen from './Amostra/amostra_principal'; // Amostras
-import Amostra1Screen from './Amostra/quest1';
-import Amostra2Screen from './Amostra/quest2';
-import Amostra3Screen from './Amostra/quest3';
-import Amostra4Screen from './Amostra/quest4';
-import Amostra5Screen from './Amostra/quest5';
-import Amostra6Screen from './Amostra/quest6';
-import Amostra7Screen from './Amostra/quest7';
-import Amostra8Screen from './Amostra/quest8';
+import AmostraPrincial from './Amostra/amostra_principal'; // Amostras
+import Amostra1 from './Amostra/quest1';
+import Amostra2 from './Amostra/quest2';
+import Amostra3 from './Amostra/quest3';
+import Amostra4 from './Amostra/quest4';
+import Amostra5 from './Amostra/quest5';
+import Amostra6 from './Amostra/quest6';
+import Amostra7 from './Amostra/quest7';
+import Amostra8 from './Amostra/quest8';
+import Amostra9 from './Amostra/quest9';
+
+import GraficoPrincipal from './Analise_Graficos/graficos_principal';
+import Grafico1 from './Analise_Graficos/quest1';
 
 import { QuestoesContext } from './questoes.context';
 
@@ -214,39 +218,52 @@ export default class App extends React.Component{
 
             <Stack.Screen //Amostras
               name='AmostraPrincipal'
-              component={AmostraScreen}
+              component={AmostraPrincial}
             />
             <Stack.Screen
               name='Amostra1'
-              component={Amostra1Screen}
+              component={Amostra1}
             />
             <Stack.Screen
               name='Amostra2'
-              component={Amostra2Screen}
+              component={Amostra2}
             />
             <Stack.Screen
               name='Amostra3'
-              component={Amostra3Screen}
+              component={Amostra3}
             />
             <Stack.Screen
               name='Amostra4'
-              component={Amostra4Screen}
+              component={Amostra4}
             />
             <Stack.Screen
               name='Amostra5'
-              component={Amostra5Screen}
+              component={Amostra5}
             />
             <Stack.Screen
               name='Amostra6'
-              component={Amostra6Screen}
+              component={Amostra6}
             />
             <Stack.Screen
               name='Amostra7'
-              component={Amostra7Screen}
+              component={Amostra7}
             />
             <Stack.Screen
               name="Amostra8"
-              component={Amostra8Screen}
+              component={Amostra8}
+            />
+            <Stack.Screen
+              name='Amostra9'
+              component={Amostra9}
+            />
+
+            <Stack.Screen
+              name='GraficoPrincipal'
+              component={GraficoPrincipal}
+            />
+            <Stack.Screen
+              name='Grafico1'
+              component={Grafico1}
             />
           </Stack.Navigator>
         </NavigationContainer>
